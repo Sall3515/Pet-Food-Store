@@ -1,0 +1,23 @@
+.side-bar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 60px;
+  height: 100vh;
+  background: transparent;
+  z-index: 15;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bar-icon {
+  display: flex;
+  flex-direction: column;
+}
+
+.bar-icon > a > i {
+  margin-bottom: 35px;
+  font-size: 25px;
+  color: black;
+}

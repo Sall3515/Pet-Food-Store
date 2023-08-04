@@ -1,0 +1,106 @@
+.info {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 20px;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 50px 20px;
+  color: var(--color-icon);
+  justify-content: center;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.info h1 {
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--color-icon);
+}
+
+.community {
+  grid-column: 2 / 4;
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+  margin: 30px auto 0 auto;
+}
+
+.community > h1 {
+  font-weight: var(--font_2);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-icon);
+  padding: 20px;
+}
+
+footer {
+  background-color: var(--color-16);
+}
+
+input,
+button {
+  margin-bottom: 10px;
+  height: 40px;
+  width: 100%;
+}
+
+button {
+  background-color: var(--color-18);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:focus {
+  background-color: var(--color-icon);
+  transition: 0.3s ease-in-out;
+}
+
+.footer {
+  padding: 30px;
+  font-size: 13px;
+}
+
+input {
+  padding-left: 20px;
+  font-family: var(--font-4);
+}
+
+.info div p {
+  padding: 10px;
+  font-size: 16px;
+  line-height: 1.2em;
+  font-family: var(--font-4);
+}
+
+.pawprints > .side-icons {
+  display: flex;
+  margin: 30px 20px;
+  font-size: 1.6rem;
+}
+
+.side-icon > a {
+  text-decoration: none;
+  color: black;
+  margin-right: 25px;
+}
+
+.sm-header > h3 {
+  margin-bottom: 8px;
+}
+
+.sm-header > h3 > a {
+  color: var(--color-icon);
+}
+
+h3.gray > a {
+  color: rgb(204, 201, 201);
+}
+
+h3.gray:hover a {
+  color: rgb(223, 224, 226);
+}

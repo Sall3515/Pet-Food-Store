@@ -1,0 +1,149 @@
+.products {
+    height: 100%;
+    display: grid;
+    justify-content: space-around;
+    padding: 30px 0 10px 0;
+}
+
+.h1 {
+    font-size: 13px;
+    padding: 10px;
+    text-align: center;
+    font-family: var(--font_2);
+    color: var(--color-icon);
+}
+
+.product {
+    position: relative;
+    max-width: 300px;
+    max-height: 380px;
+    text-align: center;
+    margin-bottom: 120px;
+    margin-top: 20px;
+    padding: 35px 0 35px 0;
+}
+
+.add-to-cart {
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    display: none;
+}
+
+.add-to-cart:hover {
+    background-color: var(--color-icon);
+    color: rgba(255, 255, 255, 0.93);
+}
+
+.product>div {
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.product p a {
+    font-weight: var(--font-4);
+    color: rgba(31, 31, 31, 0.756);
+    font-weight: 100;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.product p {
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: var(--color-text);
+}
+
+.product img {
+    height: 100%;
+    padding: 10px;
+    max-width: 280px;
+}
+
+.shop-btn {
+    background-color: transparent;
+    border: 1px solid black;
+    width: fit-content;
+    height: auto;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 0px auto 20px auto;
+    padding: 10px 20px;
+    font-family: var(--font-4);
+    margin-bottom: 30px;
+    font-weight: 100;
+    transition: background, 0.4s;
+}
+
+.title {
+    position: absolute;
+    left: 110px;
+    top: 350px;
+    z-index: 4;
+    visibility: hidden;
+    transition: top .2s ease-in-out;
+}
+
+.product:hover .title {
+    top: 320px;
+    visibility: visible;
+}
+
+.shop-btn:hover {
+    background-color: var(--color-icon);
+}
+
+.shop-btn:hover a {
+    color: rgba(255, 255, 255, 0.86);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+}
+
+.product:hover .add-to-cart {
+    display: block;
+    opacity: 1;
+}
+
+
+@media (min-width: 606px) {
+    .products {
+        grid-template-columns: repeat(2, 300px);
+    }
+
+    .product img {
+        padding: 30px 0;
+    }
+}
+
+@media (min-width: 1329px) {
+    .products {
+        padding: 20px 0;
+        grid-template-columns: repeat(4, 300px);
+    }
+
+    .product img {
+        padding: 30px 0;
+    }
+
+    .product {
+        margin-top: 0px;
+    }
+
+    .shop-btn {
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+
+    .h1 {
+        font-size: 20px;
+    }
+}

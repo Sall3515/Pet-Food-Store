@@ -1,0 +1,72 @@
+.hero {
+  height: 70vh;
+  background-image: url(https://images.unsplash.com/photo-1506070920589-a3d6dad5ade1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.hero > div {
+  padding: 80px 0 50px 30px;
+  font-family: var(--font_5);
+  width: fit-content;
+  height: 60%;
+}
+
+.hero div > p {
+  height: 40px;
+  width: fit-content;
+  background-color: var(--color-icon);
+  padding: 10px 15px 10px 15px;
+  margin-top: 30px;
+}
+
+.hero-btn {
+  width: fit-content;
+  padding: 10px 20px;
+  background-color: var(--color-icon);
+  color: white;
+  text-align: start;
+  margin-top: 50px;
+  transition: background, 0.4s;
+}
+.hero-btn > a {
+  color: white;
+}
+
+.hero-btn:hover {
+  color: var(--color-icon);
+  background-color: rgba(177, 170, 170, 0.922);
+}
+
+.hero > div > h1 {
+  letter-spacing: 1px;
+  width: fit-content;
+  padding-bottom: 30px;
+  color: white;
+  font-weight: 40px;
+}
+
+@media (min-width: 700px) {
+  .hero {
+    height: 85vh;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .hero > div > h1 {
+    padding-bottom: 25px;
+    font-size: 3.5rem;
+    word-spacing: 4px;
+  }
+
+  .hero > div {
+    padding-top: 100px;
+    margin-left: 100px;
+  }
+}

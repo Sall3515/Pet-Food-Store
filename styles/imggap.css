@@ -1,0 +1,114 @@
+.img-gap {
+    height: 800px;
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    gap: 20px;
+}
+
+.dog-img {
+    width: 100%;
+    background-image: url(https://static.wixstatic.com/media/913019_624cc9fc93b842638171abba63c6f44b~mv2_d_3579_1369_s_2.jpg/v1/fill/w_1225,h_693,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/913019_624cc9fc93b842638171abba63c6f44b~mv2_d_3579_1369_s_2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.dog-img-content {
+    margin: 0px 15px 10px 15px;
+    height: 95%;
+    width: 90%;
+    background-color: var(--color-33);
+    opacity: 0.9;
+
+}
+
+.dog-img-content div {
+    max-width: 350px;
+    margin: 20px 20px;
+    padding-top: 40px;
+}
+
+.dog-img-content div>h1 {
+    color: var(--color-icon);
+    font-size: 20px;
+}
+
+.dog-img-content div>p {
+    color: var(--color-icon);
+    font-size: 15px;
+    padding-top: 30px;
+    font-family: var(--font-4);
+}
+
+.gvback {
+    text-align: center;
+    padding: 20px;
+    align-self: center;
+}
+
+.gvback h1 {
+    font-size: 1.7rem;
+    margin: 10px 0 25px 0;
+    color: var(--color-icon);
+}
+
+.gvback p {
+
+    font-size: 1rem;
+    margin: 20px 0;
+    color: var(--color-icon);
+    padding-bottom: 30px;
+    font-weight: 100;
+    font-family: var(--font-4);
+}
+
+.gvback a {
+
+    padding: 10px 15px;
+    color: var(--color-icon);
+    border: 1px solid black;
+    transition: background, 0.4s;
+    margin-bottom: 30px;
+
+}
+
+.gvback a:hover {
+    color: white;
+    background-color: var(--color-icon);
+}
+
+
+@media(min-width:479px) {
+    .dog-img-content {
+        height: 100%;
+        width: 500px;
+        margin: 0;
+    }
+
+    .dog-img-content div {
+        margin: 0px auto;
+    }
+
+    .gvback h1 {
+        font-size: 3rem;
+    }
+
+    .gvback p {
+        width: 500px;
+        font-size: 1.5rem;
+        margin: 20px auto;
+    }
+}
+
+@media(min-width:606px) {
+
+    .dog-img-content {
+        margin-left: 10%;
+    }
+
+    .img-gap {
+        margin-top: 50px;
+    }
+}
